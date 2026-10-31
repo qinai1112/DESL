@@ -1,0 +1,36 @@
+{
+  "horizon_days": 1095,
+  "min_history_visits": 2,
+  "seed": 42,
+  "label_path": "data/FiveIndicators.xlsx",
+  "feature_path": "data/features_window_tasks.npz",
+  "existing_assignments": "results/single_visit_two_year_onset/rolling_samples_metadata.csv",
+  "outer_manifest": "results/image_shuffle_control_5fold/split_manifest.json",
+  "clinical_variables": [
+    "sex",
+    "age",
+    "FT3",
+    "FT4",
+    "TSH",
+    "TgAb",
+    "TPOAb"
+  ],
+  "patient_id_column": "patient_Id",
+  "visit_date_column": "time",
+  "label_column": "SIC",
+  "fusion_dim": 128,
+  "epochs": 200,
+  "patience": 20,
+  "batch_size": 8,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.001,
+  "ema_decay": 0.999,
+  "patient_balanced": true,
+  "class_weights": true,
+  "threads": 1,
+  "bootstrap_iterations": 1000,
+  "antibody_variables": [
+    "TgAb",
+    "TPOAb"
+  ]
+}

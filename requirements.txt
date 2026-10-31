@@ -1,0 +1,11 @@
+# Tested with Python 3.9 and PyTorch 2.5.1
+torch==2.5.1
+torchvision
+torch_geometric>=2.4
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+openpyxl
+Pillow
